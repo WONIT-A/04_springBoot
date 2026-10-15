@@ -178,4 +178,19 @@ public class AccountController {
     public List<AccountResponse> findAllAccountsByAccountType(@PathVariable String accountType){
         return accountService.findAllAccountsByAccountType(accountType).stream().map(AccountResponse::from).toList();
     }
+
+    // 일반 JPA의 규칙대로
+    //   PUT    /api/accounts/{accountNo}         통째로 교체 200
+    // PUT 은 "이 주소의 자원을 내가 보낸 내용으로 통째로 바꿔 주세요"
+    //   - 고칠 수 있는 칸을 전부 보내야 한다. 하나라도 빠지면 400
+    //   - 같은 요청을 몇 번 보내도 결과가 같다 (멱등). 두 번 보내도 accountType · status 는 똑같다
+    // PATCH 와 비교: PATCH /status 는 status 한 칸만 보내고, 나머지 칸은 그대로 둔다
+    @PutMapping("/{accountNo}")
+    public AccountResponse updateOne(@PathVariable("accountNo") String accountNo, // 주소줄
+                                     @RequestBody AccountCreateRequest request) { // Body
+        return AccountResponse.from(accountService.updateOne(accountNo, request));
+    }
+
+
+
 }
