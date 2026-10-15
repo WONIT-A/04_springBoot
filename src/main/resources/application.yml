@@ -55,4 +55,4 @@ logging:
 #    name: logs/wonit.log
 
 server:
-  port: 8080
+  port: 8081
