@@ -13,17 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// RestController = 인터넷 주소(URL)를 받아 Service 를 부르는 부분. 돌려주는 자바 객체는 Spring 이 JSON 으로 바꿔 응답한다
-// REST 규칙: URL 은 명사(무엇을), HTTP 메서드는 동사(어떻게)
-//   GET    /api/accounts                     목록      200
-//   GET    /api/accounts/{accountNo}         하나      200
-//   POST   /api/accounts                     개설      201 + Location 헤더로 개설된 주소 전송
-//   PUT    /api/accounts/{accountNo}         통째로 교체 200
-//   PATCH  /api/accounts/{accountNo}/status  상태 변경 200
-//   DELETE /api/accounts/{accountNo}         해지      204
-//   POST   /api/accounts/{accountNo}/withdrawals    출금      201
-//   POST   /api/accounts/{accountNo}/deposits       입금      201
-//   GET    /api/accounts/{accountNo}/transactions   거래내역  200 (쪽 단위로 출력)
 @Slf4j
 @Tag(name = "swagger 테스트 API", description = "swagger 테스트를 진행하는 API")
 @RestController

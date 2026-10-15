@@ -6,12 +6,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
-// @Data // @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequriedArgsConstructor
+
 // 보안이 중요한 데이터 처리에는 setter를 직접 만들어서 사용합니다.
-@Getter
-@ToString
-@EqualsAndHashCode
-@RequiredArgsConstructor
+//@Getter
+//@ToString
+//@EqualsAndHashCode
+//@RequiredArgsConstructor
+@Data // @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequriedArgsConstructor
 @Entity
 public class Account {
 
@@ -37,5 +38,7 @@ public class Account {
         account.balance = 0;
         return account;
     }
+
+
 
 }
