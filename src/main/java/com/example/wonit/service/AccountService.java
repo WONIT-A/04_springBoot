@@ -136,4 +136,12 @@ public class AccountService {
         return account;
     }
 
+    public AccountResponse updateOne(String accountNo, AccountCreateRequest request) {
+        // 원본 가져오기
+        // 화면에 뿌리기 (통째로 바꾸는 경우에는 생략 가능 / 일부만 가져올 경우에는)
+        //  - 원본의 내용과 일치하는 필드인지 -> 일치하면 변경, 그렇지 않으면 스킵
+        // 바뀐 내용 새로 객체로 저장하기
+        // DB에 반영하기(레파지토리)
+        // 반영된 상태 확인하기
+    }
 }
