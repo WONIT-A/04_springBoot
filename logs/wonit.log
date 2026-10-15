@@ -2408,3 +2408,151 @@ Caused by: java.lang.ClassNotFoundException: com.example.wonit.service.AccountSe
 2026-10-15T09:08:31.390+09:00  INFO 14092 --- [wonit] [RMI TCP Connection(2)-172.21.32.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-10-15T09:08:31.392+09:00  INFO 14092 --- [wonit] [RMI TCP Connection(2)-172.21.32.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2026-10-15T09:10:01.569+09:00  INFO 14092 --- [wonit] [http-nio-8081-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 719 ms
+2026-10-15T12:02:54.894+09:00  INFO 14092 --- [wonit] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-10-15T12:02:54.907+09:00  INFO 14092 --- [wonit] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-15T12:02:54.920+09:00  INFO 14092 --- [wonit] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-15T12:02:54.935+09:00  INFO 14092 --- [wonit] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:02:54.948+09:00  WARN 14092 --- [wonit] [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-10-15T12:02:54.951+09:00  INFO 14092 --- [wonit] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-15T12:02:54.954+09:00  INFO 14092 --- [wonit] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-15T12:02:55.181+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Starting WonitApplication using Java 21.0.12.1 with PID 14092 (C:\ITStudy\04_java\wonitGit\build\classes\java\main started by yeonji in C:\ITStudy\04_java\wonitGit)
+2026-10-15T12:02:55.182+09:00 DEBUG 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-15T12:02:55.183+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-10-15T12:02:55.920+09:00  INFO 14092 --- [wonit] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-15T12:02:55.944+09:00  INFO 14092 --- [wonit] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2026-10-15T12:02:56.253+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-10-15T12:02:56.256+09:00  INFO 14092 --- [wonit] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-15T12:02:56.256+09:00  INFO 14092 --- [wonit] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-15T12:02:56.307+09:00  INFO 14092 --- [wonit] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1117 ms
+2026-10-15T12:02:56.439+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-15T12:02:56.477+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-15T12:02:56.478+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-15T12:02:56.480+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn72: url=jdbc:h2:mem:testdb user=SA
+2026-10-15T12:02:56.480+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-15T12:02:56.482+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-15T12:02:56.583+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-15T12:02:56.585+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists account cascade 
+2026-10-15T12:02:56.586+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists transaction cascade 
+2026-10-15T12:02:56.586+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    create table account (
+        account_id integer generated by default as identity,
+        customer_id integer,
+        balance bigint not null,
+        account_no varchar(255),
+        account_type varchar(255),
+        status varchar(255),
+        primary key (account_id)
+    )
+2026-10-15T12:02:56.587+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    create table transaction (
+        account_id integer not null,
+        amount bigint not null,
+        balance_after bigint not null,
+        transfer_id bigint,
+        tx_datetime timestamp(6) not null,
+        tx_id bigint generated by default as identity,
+        tx_type varchar(10) not null,
+        category varchar(20),
+        counterparty varchar(50),
+        memo varchar(100),
+        primary key (tx_id)
+    )
+2026-10-15T12:02:56.589+09:00  INFO 14092 --- [wonit] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:02:56.761+09:00  WARN 14092 --- [wonit] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-15T12:02:56.971+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-10-15T12:02:57.018+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-15T12:02:57.048+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-10-15T12:02:57.053+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Started WonitApplication in 1.969 seconds (process running for 10471.681)
+2026-10-15T12:02:57.054+09:00  WARN 14092 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-15T12:02:57.054+09:00  WARN 14092 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-15T12:02:57.055+09:00  INFO 14092 --- [wonit] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-10-15T12:02:58.403+09:00  INFO 14092 --- [wonit] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-10-15T12:02:58.404+09:00  INFO 14092 --- [wonit] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-15T12:02:58.409+09:00  INFO 14092 --- [wonit] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-15T12:02:58.411+09:00  INFO 14092 --- [wonit] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:02:58.413+09:00  WARN 14092 --- [wonit] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-10-15T12:02:58.413+09:00  INFO 14092 --- [wonit] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-10-15T12:02:58.415+09:00  INFO 14092 --- [wonit] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-10-15T12:02:58.502+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Starting WonitApplication using Java 21.0.12.1 with PID 14092 (C:\ITStudy\04_java\wonitGit\build\classes\java\main started by yeonji in C:\ITStudy\04_java\wonitGit)
+2026-10-15T12:02:58.502+09:00 DEBUG 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-10-15T12:02:58.502+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-10-15T12:02:58.657+09:00  INFO 14092 --- [wonit] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-15T12:02:58.665+09:00  INFO 14092 --- [wonit] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2026-10-15T12:02:58.773+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-10-15T12:02:58.774+09:00  INFO 14092 --- [wonit] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-15T12:02:58.774+09:00  INFO 14092 --- [wonit] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-15T12:02:58.786+09:00  INFO 14092 --- [wonit] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 282 ms
+2026-10-15T12:02:58.820+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-15T12:02:58.836+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-15T12:02:58.836+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-10-15T12:02:58.837+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn82: url=jdbc:h2:mem:testdb user=SA
+2026-10-15T12:02:58.837+09:00  INFO 14092 --- [wonit] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-10-15T12:02:58.839+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-15T12:02:58.877+09:00  INFO 14092 --- [wonit] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-15T12:02:58.878+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists account cascade 
+2026-10-15T12:02:58.878+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists transaction cascade 
+2026-10-15T12:02:58.879+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    create table account (
+        account_id integer generated by default as identity,
+        customer_id integer,
+        balance bigint not null,
+        account_no varchar(255),
+        account_type varchar(255),
+        status varchar(255),
+        primary key (account_id)
+    )
+2026-10-15T12:02:58.879+09:00 DEBUG 14092 --- [wonit] [restartedMain] org.hibernate.SQL                        : 
+    create table transaction (
+        account_id integer not null,
+        amount bigint not null,
+        balance_after bigint not null,
+        transfer_id bigint,
+        tx_datetime timestamp(6) not null,
+        tx_id bigint generated by default as identity,
+        tx_type varchar(10) not null,
+        category varchar(20),
+        counterparty varchar(50),
+        memo varchar(100),
+        primary key (tx_id)
+    )
+2026-10-15T12:02:58.882+09:00  INFO 14092 --- [wonit] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:02:58.952+09:00  WARN 14092 --- [wonit] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-15T12:02:59.109+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-10-15T12:02:59.126+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-15T12:02:59.144+09:00  INFO 14092 --- [wonit] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-10-15T12:02:59.147+09:00  INFO 14092 --- [wonit] [restartedMain] com.example.wonit.WonitApplication       : Started WonitApplication in 0.663 seconds (process running for 10473.775)
+2026-10-15T12:02:59.148+09:00  WARN 14092 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-15T12:02:59.150+09:00  WARN 14092 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-15T12:02:59.150+09:00  INFO 14092 --- [wonit] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-10-15T12:34:17.810+09:00  INFO 14092 --- [wonit] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-15T12:34:17.813+09:00  INFO 14092 --- [wonit] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-15T12:34:17.822+09:00  INFO 14092 --- [wonit] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:34:17.824+09:00  WARN 14092 --- [wonit] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-10-15T12:34:17.825+09:00  INFO 14092 --- [wonit] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-10-15T12:34:17.826+09:00  INFO 14092 --- [wonit] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
