@@ -6577,3 +6577,10 @@ com.example.wonit.exception.AccountNotFoundException: 123141계좌를 찾을 수
 2026-10-15T12:14:14.106+09:00  WARN 23308 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-10-15T12:14:14.107+09:00  WARN 23308 --- [wonit] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
 2026-10-15T12:14:14.107+09:00  INFO 23308 --- [wonit] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-10-15T12:24:00.679+09:00  INFO 23308 --- [wonit] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-10-15T12:24:00.681+09:00  INFO 23308 --- [wonit] [Thread-58] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-15T12:24:00.685+09:00  INFO 23308 --- [wonit] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-15T12:24:00.686+09:00  INFO 23308 --- [wonit] [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15T12:24:00.688+09:00  WARN 23308 --- [wonit] [Thread-58] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-10-15T12:24:00.688+09:00  INFO 23308 --- [wonit] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-10-15T12:24:00.688+09:00  INFO 23308 --- [wonit] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.

@@ -210,6 +210,6 @@ public class AccountController {
     @PutMapping("/{accountNo}")
     public AccountResponse updateOne(@PathVariable("accountNo") String accountNo, // 주소줄
                                      @RequestBody AccountCreateRequest request) { // Body
-        return accountService.updateOne(accountNo, request);
+        return AccountResponse.from(accountService.updateOne(accountNo, request));
       }
     }
